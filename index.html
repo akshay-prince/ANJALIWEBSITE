@@ -17,7 +17,7 @@
     --navy:#1F3A75;
     --navy-deep:#152A57;
     --charcoal:#363435;
-    --tan:#E99C4A;
+    --tan:#ffce9a;
     --cream:#FBF4E7;
     --cream-deep:#F5E6C8;
     --white:#FFFFFF;
@@ -176,7 +176,7 @@
   }
   .hero h1 .accent{
     color:var(--crimson);
-    font-style:italic;
+    font-style:bold;
     font-weight:600;
   }
   .hero .sub-line{
@@ -314,7 +314,7 @@
     color:var(--crimson);
     font-weight:700;
     font-size:14px;
-    letter-spacing:2px;
+    letter-spacing:1px;
     text-transform:uppercase;
     margin-bottom:14px;
     display:block;
@@ -412,13 +412,14 @@
   .gallery-band{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:6px;
+    gap:10px;
   }
   .gallery-band img{
-    height:340px;
-    width:100%;
+     border-radius:var(--radius);
+    height:280px;
     object-fit:cover;
-    filter:saturate(1.03);
+    box-shadow:0 12px 28px rgba(0,0,0,0.10);
+    transition:transform .35s ease;
   }
 
   /* ---------- WHY CHOOSE US ---------- */
@@ -458,9 +459,10 @@
     flex-direction:column;
     gap:18px;
   }
-  .why-photos img{
+  .why-photos img,
+  .why-photos video{
     border-radius:var(--radius);
-    height:220px;
+    height:250px;
     width:100%;
     object-fit:cover;
     box-shadow:0 14px 30px rgba(0,0,0,0.10);
@@ -737,9 +739,8 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-cta">
-      <a href="tel:+918606348410" class="btn outline">Call Now</a>
-      <a href="https://wa.me/918606348410" target="_blank" class="btn">Enquire on WhatsApp</a>
-      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+      <a href="tel:+918129672276" class="btn outline">Call Now</a>
+      <a href="https://wa.me/918129672276" target="_blank" class="btn">Enquire on WhatsApp</a>
     </div>
   </nav>
 </header>
@@ -749,7 +750,7 @@
   <div class="hero-top">
     <div class="hero-copy">
       <span class="eyebrow">● Wholesale Kurti Manufacturers</span>
-      <h1>Kurti <span class="accent">manufacturers</span><br>you can build<br>your store on.</h1>
+      <h1>Kurti <span class="accent">Manufacturers</span><br>you can build<br>your store on.</h1>
       <p class="desc">Anjali has been designing, producing and supplying kurtis, co‑ord sets and churidhar sets to retailers across Kerala since 1994 — all from our own in‑house production floors in Ernakulam.</p>
 
       <div class="trust-stat">
@@ -758,8 +759,8 @@
       </div>
 
       <div class="hero-cta-row">
-        <a href="tel:+918606348410" class="btn">Call 8606 348 410</a>
-        <a href="https://wa.me/918606348410" target="_blank" class="btn outline">WhatsApp 8606 348 410</a>
+        <a href="tel:+918129672276" class="btn">Call 8129 672 276</a>
+        <a href="https://wa.me/918129672276" target="_blank" class="btn outline">WhatsApp 8129 672 276</a>
       </div>
     </div>
 
@@ -774,13 +775,12 @@
       <div class="feature-item"><span class="icon">⏳</span><span class="label">30+ Years of Experience</span></div>
       <div class="feature-item"><span class="icon">🏭</span><span class="label">Own Production</span></div>
       <div class="feature-item"><span class="icon">👗</span><span class="label">Exclusive Designs</span></div>
-      <div class="feature-item"><span class="icon">🛍️</span><span class="label">Retailer Friendly</span></div>
       <div class="feature-item"><span class="icon">📦</span><span class="label">Bulk Supply</span></div>
     </div>
   </div>
   <div class="contact-strip">
     For Online Enquiries, Please Contact:
-    <a href="tel:+918606348410">8606348410</a><span class="sep">|</span><a href="tel:+918606348410">8606348410</a>
+    <a href="tel:+918129672276">8129 672 276</a><span class="sep">|</span><a href="tel:+918129672276">8129 672 276</a>
   </div>
 </section>
 
@@ -827,8 +827,10 @@
         </ul>
       </div>
       <div class="floor-photos">
-        <img src="images/firstfloor1.jpeg" alt="First floor bottoms section, Anjali showroom">
-        <img src="images/first-floor-2.jpg" alt="First floor denim section, Anjali showroom">
+
+
+        <img src="images/fristfloor1.jpg" alt="First floor bottoms section, Anjali showroom">
+        <img src="images/firstfloor2.jpeg" alt="First floor denim section, Anjali showroom">
       </div>
     </div>
 
@@ -846,17 +848,13 @@
         <div class="floor-note">Ernakulam Kurtis by Anjali — designed, cut and stitched entirely in-house on these floors.</div>
       </div>
       <div class="floor-photos">
-        <img src="images/second-floor-1.jpg" alt="Second floor production area, Anjali showroom">
-        <img src="images/second-floor-2.jpg" alt="Third floor fabric storage, Anjali showroom">
+        <img src="images/secondfloor.jpeg" alt="Second floor production area, Anjali showroom">
+        <img src="images/thirdfloor.jpeg" alt="Third floor fabric storage, Anjali showroom">
       </div>
     </div>
   </div>
 
-  <div class="gallery-band">
-    <img src="images/garment-hanging.jpg" alt="Anjali kurti fabric detail">
-    <img src="images/garment-detail-1.jpg" alt="Anjali kurti print detail">
-    <img src="images/garment-detail-2.jpg" alt="Anjali kurti embroidery detail">
-  </div>
+ 
 </section>
 
 <!-- ============ WHY CHOOSE US ============ -->
@@ -875,9 +873,11 @@
         </ul>
       </div>
       <div class="why-photos">
-        <img src="images/store-1.jpg" alt="Retailers shopping at Anjali showroom">
-        <img src="images/store-2.jpg" alt="Anjali showroom interior with buyers">
-        <img src="images/store-3.jpg" alt="Anjali reception and fabric floor">
+        <img src="images/reception.jpg" alt="Retailers shopping at Anjali showroom">
+        <img src="images/groundpic1.jpeg" alt="Anjali showroom interior with buyers">
+        <video autoplay muted loop playsinline>
+          <source src="images/intro.mp4" type="video/mp4">
+</video>
       </div>
     </div>
 
@@ -918,23 +918,23 @@
         <h2>Contact Us</h2>
 
         <div class="contact-row">
-          <div class="ic">📞</div>
+          <div class="ic">☎</div>
           <div class="txt">
-            <a href="tel:+918606348410">8606 348 410</a><br>
-            <a href="tel:+918606348410">8606348410</a>
+            <a href="tel:+918129672276">8129672276</a><br>
+            <a href="tel:+918129672276">8129672276</a>
             <div class="small">Mon–Sat, 10:00 AM – 8:00 PM</div>
           </div>
         </div>
 
         <div class="contact-row">
-          <div class="ic">📍</div>
+          <div class="ic"><img src="images/location.png" alt="Location icon"></div>
           <div class="txt">
             <div>Market Rd, Cloth Bazar,<br>Marine Drive, Ernakulam,<br>Kerala – 682011</div>
           </div>
         </div>
 
         <div class="contact-cta-row">
-          <a href="https://wa.me/918606348410" target="_blank" class="btn">Chat with Us on WhatsApp</a>
+          <a href="https://wa.me/918129672276" target="_blank" class="btn">Chat with Us on WhatsApp</a>
           <a href="https://www.google.com/maps/search/?api=1&query=Anjali+Market+Rd+Cloth+Bazar+Marine+Drive+Ernakulam" target="_blank" class="btn outline" style="color:#fff;border-color:rgba(255,255,255,0.5);">Get Directions</a>
         </div>
       </div>
@@ -971,12 +971,8 @@
   </div>
 </footer>
 
-<a href="https://wa.me/918606348410" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.86 14.02c-.25.7-1.45 1.34-2 1.43-.51.08-1.15.11-1.86-.12-.43-.14-.98-.32-1.68-.63-2.96-1.28-4.89-4.26-5.04-4.46-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2<|fim_middle|>
-
-<script>
-  const burger = document.getElementById('burgerBtn');
-  const navLinks = document.getElementById('navLinks');
+<a href="https://wa.me/918129672276" target="_blank" class="wa-float" aria-label="Chat on WhatsApp"><img src="images/whatsapp.png" alt="WhatsApp icon"></a>
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.86 14.02c-.25.7-1.45 1.34-2 1.43-.51.08-1.15.11-1.86-.12-.43-.14-.98-.32-1.68-.63-2.96-1.28-4.89-4.26-5.04-4.46-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2
   burger.addEventListener('click', () => {
     navLinks.classList.toggle('mobile-open');
   });
